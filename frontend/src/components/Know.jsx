@@ -3,11 +3,11 @@ import "./Know.css"
 const KnowMore = () => {
     return (
         <>
-            <div className='card-container' style={{ minHeight: '90vh' }}>
-                <div className='card'>
+            <div className='card7-container' style={{ minHeight: '90vh' }}>
+                <div className='card7'>
                     <div className='for-flex'>
                         <div>
-                            <img className='cards' src="https://thumbs.dreamstime.com/b/calculator-word-view-transaction-history-top-magnifying-glass-banknotes-293154421.jpg?w=768" />
+                            <img className='card7s' src="https://thumbs.dreamstime.com/b/calculator-word-view-transaction-history-top-magnifying-glass-banknotes-293154421.jpg?w=768" />
                         </div>
                         <div>
                             <h1>Transaction History</h1>
@@ -15,10 +15,10 @@ const KnowMore = () => {
                         </div>
                     </div>
                 </div>
-                <div className='card'>
+                <div className='card7'>
                     <div className='for-flex'>
                         <div>
-                            <img className='cards' src="https://thumbs.dreamstime.com/b/income-expenses-office-binders-labeled-ballpoint-pen-eyeglasses-charts-58288488.jpg?w=768" />
+                            <img className='card7s' src="https://thumbs.dreamstime.com/b/income-expenses-office-binders-labeled-ballpoint-pen-eyeglasses-charts-58288488.jpg?w=768" />
                         </div>
                         <div>
                             <h1>Incomes and Expenses</h1>
@@ -26,10 +26,10 @@ const KnowMore = () => {
                         </div>
                     </div>
                 </div>
-                <div className='card'>
+                <div className='card7'>
                     <div className='for-flex'>
                         <div>
-                            <img className='cards' src="https://thumbs.dreamstime.com/b/flat-lay-habit-tracker-book-succulent-plant-pot-wooden-calendar-june-table-background-copy-space-top-view-329604400.jpg?w=768" />
+                            <img className='card7s' src="https://thumbs.dreamstime.com/b/flat-lay-habit-tracker-book-succulent-plant-pot-wooden-calendar-june-table-background-copy-space-top-view-329604400.jpg?w=768" />
                         </div>
                         <div>
                             <h1>Goal Tracker</h1>
@@ -37,10 +37,10 @@ const KnowMore = () => {
                         </div>
                     </div>
                 </div>
-                <div className='card'>
+                <div className='card7'>
                     <div className='for-flex'>
                         <div>
-                            <img className='cards' src="https://thumbs.dreamstime.com/b/council-tax-bill-text-page-envelope-financial-chart-council-tax-bill-text-page-envelope-345956227.jpg?w=992" />
+                            <img className='card7s' src="https://thumbs.dreamstime.com/b/council-tax-bill-text-page-envelope-financial-chart-council-tax-bill-text-page-envelope-345956227.jpg?w=992" />
                         </div>
                         <div>
                             <h1>Bill Reminders</h1>
@@ -48,10 +48,10 @@ const KnowMore = () => {
                         </div>
                     </div>
                 </div>
-                <div className='card'>
+                <div className='card7'>
                     <div className='for-flex'>
                         <div>
-                            <img className='cards' src="https://thumbs.dreamstime.com/b/financial-analysis-calculator-coins-bar-graphs-paper-financial-analysis-calculator-coins-bar-graphs-paper-355646757.jpg?w=992" />
+                            <img className='card7s' src="https://thumbs.dreamstime.com/b/financial-analysis-calculator-coins-bar-graphs-paper-financial-analysis-calculator-coins-bar-graphs-paper-355646757.jpg?w=992" />
                         </div>
                         <div>
                             <h1>Graphs & Analytics</h1>
@@ -59,10 +59,10 @@ const KnowMore = () => {
                         </div>
                     </div>
                 </div>
-                <div className='card'>
+                <div className='card7'>
                     <div className='for-flex'>
                         <div>
-                            <img className='cards' src="https://thumbs.dreamstime.com/b/financial-accounting-report-book-calculator-financial-accounting-report-table-book-calculator-159896188.jpg?w=992" />
+                            <img className='card7s' src="https://thumbs.dreamstime.com/b/financial-accounting-report-book-calculator-financial-accounting-report-table-book-calculator-159896188.jpg?w=992" />
                         </div>
                         <div>
                             <h1>Custom Reports</h1>

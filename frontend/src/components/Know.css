@@ -1,31 +1,31 @@
 /* KnowMore.css */
 
 
-.cards{
+.card7s{
     height: 360px;
     border-radius: 11px;
     box-shadow: #1a1a2e;
 }
-[data-theme="dark"] .card h1{
+[data-theme="dark"] .card7 h1{
   color: white;
 }
-.card-container{
+.card7-container{
     display: grid;
     background-color: rgb(212, 203, 203);
 }
-[data-theme="dark"] .card-container{
+[data-theme="dark"] .card7-container{
   background-color: #3a4b40;
 }
-.card h3{
+.card7 h3{
   margin: 0px 75px;
 }
-.card h1{
+.card7 h1{
     margin: 8px 160px;
 }
 .for-flex{
     display: flex;
 }
-  .card {
+  .card7 {
     width: 80rem;
     height: 25rem;
     margin: 50px 171px;
@@ -38,7 +38,7 @@
     cursor: pointer;
   }
   
-  .card:hover {
+  .card7:hover {
     transform: translateY(-10px);
     box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px;
   }
@@ -54,16 +54,16 @@
     color: #f5f5f5;
   }
   
-  [data-theme="dark"] .card {
+  [data-theme="dark"] .card7 {
     background-color: #020b29;
     color: #ddd;
   }
   
-  [data-theme="dark"] .card-title {
+  [data-theme="dark"] .card7-title {
     color: #f5f5f5;
   }
   
-  [data-theme="dark"] .card-description {
+  [data-theme="dark"] .card7-description {
     color: #ccc;
   }
   
