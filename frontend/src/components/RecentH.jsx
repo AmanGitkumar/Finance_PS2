@@ -14,22 +14,7 @@ const TransactionHistory = () => {
     fetchTransactions();
   }, []);
 
-  // const fetchTransactions = async () => {
-  //   try {
-  //     const expenses = await getExpenses();
-  //     const incomes = await getIncomes();
-  //     const allTransactions = [
-  //       ...expenses.map((exp) => ({ ...exp, type: "Expense" })),
-  //       ...incomes.map((inc) => ({ ...inc, type: "Income" })),
-  //     ]
-  //       .sort((a, b) => new Date(b.date) - new Date(a.date)) // Sort by date (newest first)
-  //       .slice(0, 4); // Keep only the last 4 transactions
 
-  //     setTransactions(allTransactions);
-  //   } catch (error) {
-  //     console.error("Error fetching transactions:", error);
-  //   }
-  // };
 
 
   const fetchTransactions = async () => {

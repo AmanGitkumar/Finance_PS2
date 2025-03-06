@@ -44,7 +44,7 @@ const GoalTracker = () => {
       const userId = storedUser ? JSON.parse(storedUser)._id : null;
       if (!userId) return;
 
-      const response = await axios.get(`http://localhost:5000/goals/${userId}`);
+      const response = await axios.get(`https://finance-ps2.onrender.com/goals/${userId}`);
       setAnnualGoal(response.data.annualGoal);
       localStorage.setItem("annualGoal", JSON.stringify(response.data.annualGoal));
     } catch (error) {

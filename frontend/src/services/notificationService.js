@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://b1-ibcx.onrender.com/notifications";
+const API_URL = "https://finance-ps2.onrender.com/notifications";
 
 // 📌 ✅ Get all notifications
 export const getNotifications = async () => {
