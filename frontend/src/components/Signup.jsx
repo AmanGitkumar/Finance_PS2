@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // ✅ Navigation ke liye
+import { useNavigate } from "react-router-dom"; // Navigation ke liye
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./Signup.css";
@@ -8,7 +8,7 @@ const Signup = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const navigate = useNavigate(); // ✅ Navigation hook
+    const navigate = useNavigate(); // Navigation hook
 
     const handleSignup = async () => {
         try {
@@ -33,14 +33,14 @@ const Signup = () => {
                     theme: "dark",
                 });
 
-                // ✅ Token & User details ko localStorage me store karna
+                // Token & User details ko localStorage me store karna
                 localStorage.setItem("token", data.token);
                 localStorage.setItem("user", JSON.stringify(data.user));
 
-                // ✅ 2 sec ke baad Dashboard pr redirect
+                // 2 sec ke baad Dashboard pr redirect
                 setTimeout(() => {
                     navigate("/dashboard");
-                    window.location.reload(); // Navbar update ke liye
+                 
                 }, 1500);
 
             } else {
@@ -70,7 +70,7 @@ const Signup = () => {
 
     return (
         <div className="signup-container">
-            <ToastContainer /> {/* ✅ ToastContainer Added */}
+            <ToastContainer /> {/* ToastContainer Added */}
             <img className="sgimg" src="https://investyadnya.in/static/assets/images/slider/stock-o-meter.svg"/>
             <div className="signup-box">
                 <h2>Sign Up</h2>

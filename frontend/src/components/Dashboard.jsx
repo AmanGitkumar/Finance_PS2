@@ -27,7 +27,7 @@ const Dashboard = () => {
   const [totalIncome, setTotalIncome] = useState(0);
   const [totalExpenses, setTotalExpenses] = useState(0);
   const [showGoalForm, setShowGoalForm] = useState(false);
-  const [userName, setUserName] = useState(""); // ✅ User name state
+  const [userName, setUserName] = useState(""); 
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -37,11 +37,11 @@ const Dashboard = () => {
       return;
     }
 
-    // ✅ Fetch user name from local storage
+    //  Fetch user name from local storage
     const storedUser = localStorage.getItem("user");
     if (storedUser) {
       const parsedUser = JSON.parse(storedUser);
-      setUserName(parsedUser.name || "User"); // ✅ Default "User" if name is missing
+      setUserName(parsedUser.name || "User"); //  Default "User" if name is missing
     }
 
     fetchExpenses();
@@ -89,7 +89,7 @@ const Dashboard = () => {
           <div className="sidebar">
             <div className="dash">
               <img className="simag" src="user.png" alt="User Avatar" />
-              {/* ✅ Name ko Avatar ke Neeche Rakha */}
+              {/* Name ko Avatar ke Neeche Rakha */}
               <div className="user-name">
                 Hello, <strong>{userName}</strong> 👋
               </div>

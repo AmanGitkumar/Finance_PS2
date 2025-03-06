@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./GoalSettingForm.css";
 
-const GoalSettingForm = ({ onClose, onGoalSet = () => {} }) => { // ✅ Default function added
+const GoalSettingForm = ({ onClose, onGoalSet = () => {} }) => { //  Default function added
     const [annualGoal, setAnnualGoal] = useState("");
 
     const handleChange = (e) => {
@@ -12,7 +12,7 @@ const GoalSettingForm = ({ onClose, onGoalSet = () => {} }) => { // ✅ Default 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        // ✅ Fetch userId from localStorage
+        //  Fetch userId from localStorage
         const storedUser = localStorage.getItem("user");
         const userId = storedUser ? JSON.parse(storedUser)._id : null;
 
@@ -24,15 +24,15 @@ const GoalSettingForm = ({ onClose, onGoalSet = () => {} }) => { // ✅ Default 
         try {
             const response = await axios.post(
                 "https://finance-ps2.onrender.com/goals",
-                { userId, annualGoal }, // ✅ Include userId in payload
-                { withCredentials: true } // ✅ Ensures cookies are sent if needed
+                { userId, annualGoal }, //  Include userId in payload
+                { withCredentials: true } //  Ensures cookies are sent if needed
             );
 
-            console.log("✅ Goal Saved:", response.data);
-            onGoalSet(annualGoal); // ✅ Update the parent component safely
-            onClose(); // ✅ Close the modal
+            console.log(" Goal Saved:", response.data);
+            onGoalSet(annualGoal); //  Update the parent component safely
+            onClose(); //  Close the modal
         } catch (error) {
-            console.error("❌ Error saving goal:", error.response?.data || error.message);
+            console.error("  Error saving goal:", error.response?.data || error.message);
             alert(`Error: ${error.response?.data?.message || "Something went wrong"}`);
         }
     };

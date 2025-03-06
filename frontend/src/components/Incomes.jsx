@@ -21,7 +21,7 @@ const Incomes = () => {
     if (token) {
       fetchIncomes();
     } else {
-      console.warn("⛔ No token found! Login required.");
+      console.log("No token found! Login required.");
     }
   }, []);
 
@@ -48,7 +48,7 @@ const Incomes = () => {
       }
       setIncomes(data);
     } catch (error) {
-      console.error("⚠️ Fetch error:", error);
+      console.log("⚠️ Fetch error:", error);
       if (!retry) {
         setTimeout(() => fetchIncomes(true), 1000);
       } else {
@@ -73,7 +73,7 @@ const Incomes = () => {
       fetchIncomes();
       setFormData({ source: "", amount: "", date: "", category: "" });
     } catch (error) {
-      console.error("Error adding income:", error);
+      console.log("Error adding income:", error);
     }
   };
 

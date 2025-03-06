@@ -39,7 +39,7 @@ const TransactionHistory = () => {
 
 
 
-  // ✅ Function to export transactions as CSV
+  // Function to export transactions as CSV
   const exportToCSV = () => {
     const filteredTransactions = filterCategory
       ? transactions.filter((t) => t.category === filterCategory)
@@ -67,7 +67,7 @@ const TransactionHistory = () => {
     <div className="transaction-history">
       <h2>Transaction History</h2>
 
-      {/* ✅ Category Filter Dropdown */}
+      {/* Category Filter Dropdown */}
       <div className="filter-container">
         <label>Filter by Category:</label>
         <select
@@ -83,7 +83,7 @@ const TransactionHistory = () => {
         </select>
       </div>
 
-      {/* ✅ Transactions Table (Styled Like Previous One) */}
+      {/* Transactions Table (Styled Like Previous One) */}
       <div className="table-container">
         <table className="transactions-table">
           <thead>

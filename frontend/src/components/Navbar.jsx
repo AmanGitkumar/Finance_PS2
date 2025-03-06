@@ -39,9 +39,9 @@ const Navbar = ({ theme, toggleTheme }) => {
                     <Link to="/dashboard">Dashboard</Link>
                     <Link to="/incomes">Incomes</Link>
                     <Link to="/expenses">Expenses</Link>
-                    <Link to="/goal-tracker">Goal Tracker</Link> {/* ✅ Button added */}
+                    <Link to="/goal-tracker">Goal Tracker</Link> {/*Button added */}
                     <Link to="/notifications">🔔 </Link>{" "}
-                    {/* ✅ Notification Page Link Added */}
+                    {/*Notification Page Link Added */}
                     {/* Theme Toggle */}
                     <img 
                         className="dayNpic" 

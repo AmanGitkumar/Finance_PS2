@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { AiOutlineCloseCircle } from "react-icons/ai"; // ❌ Cross icon
+import { AiOutlineCloseCircle } from "react-icons/ai"; 
 import "./Login.css";
 
 const Login = () => {
@@ -26,12 +26,12 @@ const Login = () => {
             if (response.ok) {
                 toast.success("🎉 Login Successful!", {
                     position: "top-right",
-                    autoClose: 1500,
+                    autoClose: 1000,
                     hideProgressBar: true,
                     closeOnClick: true,
                     pauseOnHover: true,
                     draggable: true,
-                    icon: "✅", // ✅ Success icon
+                    icon: "✅", // Success icon
                     theme: "dark",
                 });
                 localStorage.setItem("token", data.token);
@@ -39,8 +39,8 @@ const Login = () => {
              
                 setTimeout(() => {
                     navigate("/dashboard");
-                    window.location.reload();
-                }, 1500);   // ✅ Auto-refresh to update Navbar UI
+                   
+                }, 1000);   //  Auto-refresh to update Navbar UI
             } else {
                 toast.error(
                     <div style={{ display: "flex", alignItems: "center" }}>
@@ -49,7 +49,7 @@ const Login = () => {
                     </div>,
                     {
                         position: "top-right",
-                        autoClose: 1500,
+                        autoClose: 1000,
                         hideProgressBar: true,
                         closeOnClick: true,
                         pauseOnHover: true,
@@ -68,7 +68,7 @@ const Login = () => {
                 </div>,
                 {
                     position: "top-right",
-                    autoClose: 1500,
+                    autoClose: 1000,
                     hideProgressBar: true,
                     closeOnClick: true,
                     pauseOnHover: true,
