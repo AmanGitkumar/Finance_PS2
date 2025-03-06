@@ -28,7 +28,7 @@ Ensure you have the following installed:
 
    ```sh
    git clone https://github.com/AmanGitkumar/Finance_PS2.git
-   cd finance_tracker
+   cd Finance_PS2
    ```
 
 2. Install dependencies:
